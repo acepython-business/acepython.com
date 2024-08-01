@@ -5,9 +5,9 @@
 </script>
 
 {#snippet defaultChildren()}
-	<ul><a href="/">Default 1</a></ul>
-	<ul><a href="/">Default 2</a></ul>
-	<ul><a href="/">Default 3</a></ul>
+	<ul><a href="/">Link 1</a></ul>
+	<ul><a href="/">Link 2</a></ul>
+	<ul><a href="/">Link 3</a></ul>
 {/snippet}
 
 <nav>{@render navChildren()}</nav>

@@ -1,15 +1,14 @@
 <script>
 	import { Nav, Footer } from '$lib/components';
 
-	let { children } = $props();
+	import { getContext } from 'svelte';
 
-	/** @type {import('svelte').Snippet} */
-	let navChildren;
+	let { children } = $props();
 </script>
 
 <section>
 	<div class="container nav">
-		<Nav {navChildren} />
+		<Nav />
 	</div>
 </section>
 <main>
