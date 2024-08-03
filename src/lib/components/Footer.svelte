@@ -3,6 +3,15 @@
 	let { children } = $props();
 </script>
 
-<footer>
-	{@render children?.()}
-</footer>
+<div class="footer-container">
+	<footer class="container-x container-y">
+		{@render children?.()}
+	</footer>
+</div>
+
+<style>
+	.footer-container {
+		background-color: var(--layout-background-color);
+		color: var(--layout-color);
+	}
+</style>

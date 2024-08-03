@@ -1,61 +1,39 @@
 <script>
 	import { Nav, Footer } from '$lib/components';
 
-	import { getContext } from 'svelte';
+	import '../reset.css';
+	import '../root.css';
 
 	let { children } = $props();
 </script>
 
-<section>
-	<div class="container nav">
-		<Nav />
-	</div>
-</section>
+<Nav />
 <main>
-	<div class="container">
-		{@render children()}
-	</div>
+	{@render children()}
 </main>
-<section>
-	<div class="container">
-		<Footer>&copy; AcePython.com</Footer>
-	</div>
-</section>
+<Footer>&copy; AcePython.com</Footer>
 
 <style>
-	:global(:root) {
-		--python-blue-base: rgb(55, 118, 171);
-		--python-blue-dark: rgb(44, 90, 134);
-		--python-blue-darker: rgb(34, 70, 104);
-		--python-blue-bright: rgb(74, 141, 192);
-		--python-blue-brighter: rgb(95, 160, 212);
-
-		--python-yellow-base: rgb(255, 211, 67);
-		--python-yellow-dark: rgb(204, 170, 54);
-		--python-yellow-darker: rgb(163, 135, 43);
-		--python-yellow-bright: rgb(255, 224, 102);
-		--python-yellow-brighter: rgb(255, 237, 140);
-
-		--layout-padding-inline: min(1.5rem, 5vw);
-		--layout-padding-block: min(1.5rem, 5vh);
-		--layout-max-width: 80rem;
-	}
-
 	:global(*) {
 		box-sizing: border-box;
 	}
 
-	:global(html, body) {
-		margin: 0;
-		padding: 0;
+	:global(html) {
+		scroll-padding-top: var(--layout-nav-height);
+		@media (prefers-reduced-motion: no-preference) {
+			scroll-behavior: smooth;
+			scroll-snap-type: block proximity;
+		}
 	}
 
 	:global(body) {
-		background-color: var(--python-blue-darker);
+		background-color: var(--theme-bg-color-1);
+		color: var(--theme-color);
 		font-family: Ubuntu;
-		color: var(--python-yellow-brighter);
-		display: grid;
-		grid-template-rows: auto 1fr auto;
+		font-size: 1rem;
+		display: flex;
+		flex-direction: column;
+		position: relative;
 		min-height: 100vh;
 	}
 
@@ -64,22 +42,21 @@
 		color: unset;
 	}
 
-	main,
-	section {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
-	.nav {
-		width: unset;
-	}
-
-	:global(.container) {
+	:global(.container-x) {
 		width: 100%;
 		max-width: var(--layout-max-width);
-		padding-block: var(--layout-padding-block);
 		padding-inline: var(--layout-padding-inline);
 		margin-inline: auto;
+	}
+
+	:global(.container-y) {
+		padding-block: var(--layout-padding-block);
+	}
+
+	main {
+		width: 100%;
+		flex: 1;
+		scroll-behavior: smooth;
+		padding-block: unset;
 	}
 </style>

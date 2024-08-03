@@ -1,0 +1,28 @@
+:root {
+    /* Layout */
+    --layout-padding-inline: min(2rem, 5vw);
+    --layout-padding-block: min(2rem, 5vh);
+    --layout-max-width: 85rem;
+    --layout-nav-height: calc(var(--layout-padding-block) * 2 + 1.5rem);
+    --layout-background-color: #306998;
+    --layout-color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
