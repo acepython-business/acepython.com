@@ -46,7 +46,7 @@
 </Slide>
 
 <Slide id="recommendations">
-	<div class="content content-left">
+	<div class="content content-right">
 		{@render heading(faThumbsUp, 'Recommendations')}
 		<article>
 			<p>
