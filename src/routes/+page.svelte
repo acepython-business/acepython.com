@@ -101,13 +101,13 @@
 	}
 
 	:global(#about-us) {
-		background: linear-gradient(135deg, #0a3d62, #000000);
+		background: linear-gradient(135deg, #1e3799, #4a69bd);
 		color: var(--layout-color);
 	}
 
 	:global(#blog) {
-		background: linear-gradient(135deg, #1e3799, #4a69bd);
-		color: var(--layout-color);
+		background: white;
+		color: black;
 	}
 
 	:global(#recommendations) {
@@ -116,8 +116,8 @@
 	}
 
 	:global(#get-started) {
-		background: linear-gradient(135deg, #306998, #1e3799);
-		color: var(--layout-color);
+		background: white;
+		color: black;
 	}
 
 	h2 {
