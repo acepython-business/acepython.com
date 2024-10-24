@@ -14,6 +14,8 @@
 <Footer>&copy; AcePython.com</Footer>
 
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
 	:global(*) {
 		box-sizing: border-box;
 	}
@@ -29,7 +31,7 @@
 	:global(body) {
 		background-color: var(--theme-bg-color-1);
 		color: var(--theme-color);
-		font-family: Ubuntu;
+		font-family: Signika, sans-serif;
 		font-size: 1rem;
 		display: flex;
 		flex-direction: column;
@@ -42,14 +44,14 @@
 		color: unset;
 	}
 
-	:global(.container-x) {
+	:global(.inline-container) {
 		width: 100%;
 		max-width: var(--layout-max-width);
 		padding-inline: var(--layout-padding-inline);
 		margin-inline: auto;
 	}
 
-	:global(.container-y) {
+	:global(.block-container) {
 		padding-block: var(--layout-padding-block);
 	}
 

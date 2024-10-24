@@ -4,7 +4,7 @@
 </script>
 
 <section {id}>
-	<div class="container-x slide scroll-fade-in">
+	<div class="inline-container slide scroll-fade-in">
 		{@render children?.()}
 	</div>
 </section>

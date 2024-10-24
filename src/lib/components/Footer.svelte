@@ -4,7 +4,7 @@
 </script>
 
 <div class="footer-container">
-	<footer class="container-x container-y">
+	<footer class="inline-container block-container">
 		{@render children?.()}
 	</footer>
 </div>

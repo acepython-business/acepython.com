@@ -23,8 +23,8 @@
 		<article>
 			<p>
 				Our personalized, long-term Python training is designed to fit your unique goals and
-				schedule. Whether you're a beginner or a professional, we'll help you build the skills you
-				need to succeed.
+				schedule.<br />Whether you're a beginner or a professional, we'll help you build the skills
+				you need to succeed.
 			</p>
 			<p>Join us and take control of your learning journey!</p>
 		</article>

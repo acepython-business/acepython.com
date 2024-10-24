@@ -23,7 +23,7 @@
 {/snippet}
 
 <div class="nav-container">
-	<nav class="container-x nav">
+	<nav class="inline-container nav">
 		<a href="/" class="logotype">
 			<div class="logo"><img src="logo-light.svg" alt="" /></div>
 			<span class="name">AcePython.com</span>
